@@ -1,0 +1,250 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Barra de navegación */
+nav {
+  background-color: #2c3e50;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#show-cart-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Carro de Compras */
+.cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Ajusta este valor para hacer el carrito más ancho */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.cart h2 {
+  margin-top: 0;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-items li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+.remove-btn:hover {
+  color: #c0392b;
+}
+
+/* Menú */
+.menu {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+}
+.category {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 80%; /* Ancho del 50% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+.category-btn {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.category-btn:hover {
+  background-color: #1B3147;
+}
+
+.items {
+  display: none;
+  padding: 10px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+.item-description {
+  color: #777;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.add-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+.add-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-btn:hover {
+  background-color: #2980b9;
+}
+/* Notificación */
+#notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #27ae60;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+#notification.show {
+  display: block;
+}
+
+/* Contador de elementos en el carrito */
+.cart-items .count {
+font-weight: bold;
+margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2c3e50;
+}
+
+nav img {
+  width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto; /* Para mantener la proporción */
+  margin-left: 10px; /* Espacio entre el logo y el botón */
+}
+
+#show-cart-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .category {
+    width: 96%; /* Ancho del 90% en dispositivos móviles */
+  }
+
+  .item {
+    width: 380px; /* Ancho del 100% en dispositivos móviles */
+  }
+
+  .cart{
+    width: 380px;
+    height: auto;
+    border: 2px solid gray;
+    justify-content: center;
+  }
+
+  
+}
